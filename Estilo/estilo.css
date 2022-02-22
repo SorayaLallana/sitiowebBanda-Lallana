@@ -37,8 +37,7 @@ header{
 .menuInicial a{
     text-decoration: none;
     color: #6c584c;
-    transition: 1;
-   
+  
 }
 .menuInicial a:hover {
     font-size: 20px;
@@ -46,7 +45,8 @@ header{
 
 .lodelMedio {
     background: rgb(240,234,210);
-    background: linear-gradient(0deg, rgba(240,234,210,1) 0%, rgba(221,229,182,1) 93%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(221,229,182,1) 93%);
+    padding-bottom: 150px;
 }
 
 /* index */
@@ -61,11 +61,11 @@ header{
     color: #344e41;
     line-height:1,2px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .imagenes{
-            background-color: #f0ead2;
+           
             display: flex;
             justify-content: space-evenly;
             gap: 50px;
@@ -74,15 +74,13 @@ header{
 }
 
 .videos {
-    background: rgb(240,234,210);
-    background: linear-gradient(180deg, rgba(240,234,210,1) 0%, rgba(255,255,255,1) 93%);
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 35px;
-    margin-bottom: 50px;
 }
+
 
 /* historia/*  */
 .historia-pics {
@@ -96,6 +94,22 @@ header{
     flex-direction: row-reverse;
     gap: 20px;
 }
+.primerparrafo{
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 /* eventos */
 .eventos {
     display: flex;
@@ -166,7 +180,9 @@ footer {
     font-style: italic;
     font-weight: bold;
     align-items: center;
+    
 }
+
 
 .logosderedes {
     display: flex;

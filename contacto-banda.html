@@ -12,6 +12,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
         <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
 <body>
     <header class="contenedor">
@@ -43,45 +46,59 @@
     </header>
 
     <section class="lodelMedio contenedor">
-        <p class="opinionesuno">
+        <h1 class="primerparrafo "> ¡Nos encantan sus comentarios!:</h1>
+        <p class="opinionesuno animate__animated animate__flipInY">
             "Me encanta su música , sus covers y lo que trasmiten, genios" user: dkfjsljf
         </p>
-        <p class="opinionesdos">
+        <p class="opinionesdos animate__animated animate__flipInY">
             "Son cracks!! El arte que hacen es maravillosa..." user ieurier
         </p>
     </section>
         
     <footer class="contenedor">
+
         <section class="logosderedes">
 
             <a href="https://es-la.facebook.com/">
                 
-                <img src="./media/face.png" alt="" height="50px"> 
+                <img src="./media/facebook.png" alt="" height="50px" class="img.footer"> 
             </a>
             <a href="https://www.instagram.com/">
-                <img src="./media/ig.png" alt="" height="50px">
+                <img src="./media/instagram.png" alt="" height="50px" class="img.footer">
             </a>
             <a href="https://www.youtube.com/">
                 
-                <img src="./media/yt.png" alt="" height="50px">
+                <img src="./media/yt.png" alt="" height="50px" class="img.footer">
             </a>
             <a href="https://www.spotify.com/ar/">
                 
-                <img src="./media/Spotify.png" alt="" height="50px">
+                <img src="./media/Spotify.png" alt="" height="50px" class="img.footer">
             </a>
         </section>
-        
-        
-        <h1>Contacto</h1>
-        <form class="formulario">
-            Nombre y Apellido <input type="text" name="User-name" id="Nombres">
-            <br>
-            Teléfono <input type="number" name="Telphones" id="números">
-            <br>
-            Email <input type="email" name="Emails" id="Email">
-            <br>
-            <input type="submit" value="Enviar"  class="botonenviar">
-        </form>
+        <div class="cajaformulario">
+
+            <section class="textodespedida">
+                
+                <h1>Contáctenos para su evento. </h1>
+                <p>Le enviaremos la propuesta por email </p>
+            </section>
+            
+            <div class="contenedor.formulario">
+                
+                <form class="formulario">
+
+                    <input type="text" class="formulario.campo" name="User-name" id="Nombre" placeholder="Nombre">
+                    <br>
+                    <input type="text" class="formulario.campo" name="User-last" id="Apellido" placeholder="Apellido">
+                    <br>
+                    <input type="number" class="formulario.campo" name="Telphones" id="numeros" placeholder="Teléfono">
+                    <br>
+                    <input type="email" class="formulario.campo" name="Emails" id="Email" placeholder="Email">
+                    <br>
+                    <input type="submit" value="Enviar" class="botonenviar">
+                </form>
+            </div>
+        </div>
     </footer>
     </body>
 </html>

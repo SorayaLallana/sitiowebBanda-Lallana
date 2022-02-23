@@ -131,10 +131,34 @@ header{
 
 /* galeria */
 .img-galeria {
-    width: 450px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+
+}
+.img-contenedor {
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+
+}
+ 
+.img-capa {
+   position: absolute;
+    top: 0;
+   width: 100%;
+   height: 100%;
+    transition: all 500ms ease-out;
+
 }
 
-.fotosgaleria {
+.img-capa:hover{
+    opacity: 75%;
+    visibility: inherit;
+    background:#344e41;;
+}
+figure {
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -299,10 +323,12 @@ input{
     align-items: center;
 }
 
-.img-galeria{
+.img-contenedor{
     width: 200px;
+    height: 200px;
     align-items: center;
 }
+
 footer {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,34 @@
+.lodelMedio {
+    background: rgb(240,234,210);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(221,229,182,1) 93%);
+    padding-bottom: 150px;
+    .primerparrafo {
+        font-weight: bold;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .texto{
+        font-family: 'Heebo', sans-serif;
+        color: #344e41;
+        line-height:1,2px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .imagenes{
+               
+                display: flex;
+                justify-content: space-evenly;
+                gap: 50px;
+                width: 100%;
+               
+    }
+    
+    .videos {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 35px;
+    }
+}

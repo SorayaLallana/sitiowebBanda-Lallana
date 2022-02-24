@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: grid;
+          flex-direction: grid;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #dde5b6;
+}
+
+header .contenedor {
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+}
+
+header .menuInicial {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: grid;
+          flex-direction: grid;
+  gap: 80px;
+  font-weight: bold;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+header a {
+  text-decoration: none;
+  color: #6c584c;
+}
+
+.menuInicial a:hover {
+  font-size: 20px;
+}
+
+.lodelMedio {
+  background: #f0ead2;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(93%, #dde5b6));
+  background: linear-gradient(0deg, white 0%, #dde5b6 93%);
+  padding-bottom: 150px;
+}
+
+.lodelMedio .primerparrafo {
+  font-weight: bold;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lodelMedio .texto {
+  font-family: 'Heebo', sans-serif;
+  color: #344e41;
+  line-height: 1,2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.lodelMedio .imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 50px;
+  width: 100%;
+}
+
+.lodelMedio .videos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 35px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  background-color: #dde5b6;
+  font-family: 'Heebo', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .logosderedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 80px;
+}
+
+footer .cajaformulario {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+footer .textodespedida h1 {
+  margin-bottom: 0px;
+}
+
+footer .textodespedida p {
+  margin-top: 0px;
+}
+
+footer .formulario {
+  font-family: 'Heebo', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+footer input {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer .botonenviar {
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.botonenviar:hover {
+  -webkit-transform: scale(1, 2);
+          transform: scale(1, 2);
+}
+
+/* mediaqueries */
+@media screen and (max-width: 768px) {
+  .menuInicial {
+    display: -ms-grid;
+    display: grid;
+    gap: 1px;
+  }
+  .imagenes {
+    display: -ms-grid;
+    display: grid;
+    padding: none;
+    padding-bottom: 25px;
+  }
+  .videos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    padding-bottom: 25px;
+  }
+  .logosderedes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+    padding-top: 15px;
+  }
+  .primerparrafo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .historia-pics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .historia-pics_left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .eventos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .fotoseventos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .img-contenedor {
+    width: 200px;
+    height: 200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cajaformulario {
+    margin: 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

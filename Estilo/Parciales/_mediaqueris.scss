@@ -1,0 +1,69 @@
+/* mediaqueries */
+@media screen and (max-width: 768px)
+{
+ .menuInicial {
+     display: grid;
+     gap: 1px
+ }
+ .imagenes {
+     display:grid;
+     padding:none;
+     padding-bottom: 25px;
+ }
+ .videos {
+    display: flex;
+    flex-direction: row;
+     width: 100%;
+     gap: 30px;
+     padding-bottom: 25px;
+ }
+ .logosderedes{
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     padding-top:15px;
+ }
+ .primerparrafo {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+ }
+
+.historia-pics{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.historia-pics_left{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+     
+.eventos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fotoseventos{
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-contenedor{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+.cajaformulario {
+    margin: 0px;
+}
+ }

@@ -6,7 +6,7 @@
         "Parciales/_header.scss",
         "Parciales/_lodelmedio.scss",
         "Parciales/_footer.scss",
-        "Parciales/_mediaqueris.scss"
+        "Parciales/_mediaqueries.scss"
     ],
     "names": [],
     "file": "main.css"

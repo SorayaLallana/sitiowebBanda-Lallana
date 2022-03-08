@@ -1,0 +1,17 @@
+.eventos {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;    
+}
+
+.fotoseventos {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+}
+.textoevento {
+    padding-left: 30px;
+}
+
+
